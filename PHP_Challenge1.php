@@ -1,6 +1,7 @@
-//Binua Ralph Gabriel B.
-
     <?php
+
+    //Binua Ralph Gabriel B.    3BSIT-5
+
     $numbers = array(1, 2, 3, 4, 5);
     $sum = 0;
     $quantity = count($numbers);
@@ -8,4 +9,4 @@
         $sum += $number;
     }
     echo "The sum of the {$quantity} numbers is: {$sum}";
-?>
+    ?>

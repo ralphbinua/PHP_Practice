@@ -1,6 +1,7 @@
-//Binua Ralph Gabriel B.
-
 <?php
+
+    //Binua Ralph Gabriel B.    3BSIT-5
+
     $colors = array("red", "green", "blue", "yellow");
 
     sort($colors); // sort colors
