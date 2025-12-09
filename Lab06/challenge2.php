@@ -1,25 +1,36 @@
 <?php
+    class StringUtility{
+        public $word;
 
-class StringUtility {
+        public function __construct($word) {
+            $this->word = $word;
+        }
 
-    public static function shout($string) {
-        return strtoupper($string) . '!';
+        public function getWord() {
+            return $this->word;
+        }
+
+        public function setWord($word) {
+            $this->word = $word;
+        }
+
+        public function shout($word) {
+            $shout = strtoupper($word);
+            echo $shout;
+        } 
+        public function whisper($word) {
+            $shout = strtolower($word);
+            echo $shout;
+        }
+
+          public function whirepeatsper($word, $repeat) {
+            $shout = str_repeat($word,2);
+            echo $shout;
+        }
     }
 
-    public static function whisper($string) {
-        return strtolower($string) . '.';
-    }
-
-    public static function repeat($string, $times = 2) {
-        return str_repeat($string, $times);
-    }
-}
-
-$utility = new StringUtility();
-
-echo $utility->shout('Hello World') . "\n";
-echo $utility->whisper('Hello World') . "\n";
-echo $utility->repeat('Hello World ') . "\n";
-echo $utility->repeat('Hello World ', 5) . "\n";
-
+    $word1 = new StringUtility("Hello World");
+    $word1->shout("hello world\n");
+    $word1->whisper("hello world\n");
+    $word1->whirepeatsper("hello world ",2);
 ?>
